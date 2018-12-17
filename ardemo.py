@@ -7,13 +7,15 @@ update log:
     1.增加日志记录：每天更新的文章数目
 Attention:
     每周一记得手动添加日期 保证文章的完整性
+发布记录:
+    
 '''
 import arxiv
 import json
 
 
-predate = '2018-12-14'
-_date = '2018-12-15'
+predate = '2018-12-13'
+_date = '2018-12-14'
 # 14853 2018-12-13
 with open('log.json','r') as f:
     data = json.load(f)
