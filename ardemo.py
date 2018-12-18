@@ -21,6 +21,10 @@ update log:
     1. 代码初步完成
 2018-12-16 : 
     1.增加日志记录：每天更新的文章数目
+2018-12-18 :
+    1.修复\xf6编码错误     
+    2.修改命名格式 增加了篇数
+    
 Attention:
     每周一记得手动添加日期 保证文章的完整性
 发布记录:
@@ -67,8 +71,9 @@ for item in paper:
         
         
     print('*********',item['id'],item['updated'])
-with open(_date+'.md','w') as f:
-        f.write(md)
+with open(_date+'_'+str(cnt)+'.md','wb') as f:  #w  改为wb
+    #print(md)
+    f.write(md.encode("UTF-8")) #重新encode
 print(_date,'共更新',cnt,'篇paper.')
 data['log'][_date]={'start':_start,'cnt':cnt}
 with open('log.json','w') as f:
