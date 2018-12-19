@@ -61,10 +61,10 @@ for item in paper:
         
         md +='\n'
         md +='\n'
-        md += '####{_order}. {_title}'.format(_order=cnt,_title=title)
+        md += '#### {_order}. {_title}'.format(_order=cnt,_title=title)
         md +='\n'
         
-        md += '#####**Authors**: {_authors}'.format(_authors=author)
+        md += '##### **Authors**: {_authors}'.format(_authors=author)
         
         md +='\n'
         md += '> **Abstract:** {_summary}'.format(_summary=summary)
