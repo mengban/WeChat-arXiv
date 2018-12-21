@@ -36,8 +36,8 @@ import arxiv
 import json
 
 
-predate = '2018-12-18'
-_date = '2018-12-19'
+predate = '2018-12-19'
+_date = '2018-12-20'
 # 14853 2018-12-13
 with open('log.json','r') as f:
     data = json.load(f)
